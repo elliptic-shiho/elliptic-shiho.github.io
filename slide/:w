@@ -1,0 +1,5 @@
+Options +FollowSymlinks
+AddType "text/html; charset=utf-8" html
+RewriteEngine on
+RewriteRule ^slide/(.+.pdf)$ slide/$1.pdf [R=301,L,N]
+RewriteRule ^(.*).pdf$ slide/$1.pdf [R=301,L,N]
