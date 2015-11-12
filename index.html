@@ -53,7 +53,7 @@ $(function(){
     two.update();
   };
   $(window).bind('mousemove', drag);
-  
+
   var point_ellcurve = function(pos) {
     var P = two.makeCircle(72, 100, 10);
     P.fill = "#33ccff";
@@ -63,24 +63,24 @@ $(function(){
     P.translation.addSelf(curve.translation);
     return P;
   };
-  
+
   var line_between_points = function(P, Q) {
     var L = two.makeLine(P.translation.x, P.translation.y, Q.translation.x, Q.translation.y);
     L.noFill();
     L.stroke = "#33ccff";
     return L;
   };
-  
+
   var P = point_ellcurve(0.1);
-  
+
   var Q = point_ellcurve(0.4);
-  
+
   var mPQ= point_ellcurve(0.35);
   var PQ= point_ellcurve(0.65);
-  
+
   var PQmPQ = line_between_points(P, Q);
   var PQ = line_between_points(mPQ, PQ);
-  
+
   var to_count = 0;
   curve.ending = 0;
   var to_handler = function() {
@@ -92,7 +92,7 @@ $(function(){
     two.update();
   };
   setTimeout(to_handler, 2);
-  
+
   two.update();
 });
     </script>
@@ -122,7 +122,8 @@ $(function(){
         <h2>Links/Contact:</h2>
         <section class="right-align center row">
           <span class="col m6 s12"><a class="btn blue lighten-2 waves-effect waves-light col s12" href="http://twitter.com/elliptic_shiho">Twitter</a></span>
-          <span class="col m6 s12"><a class="btn blue lighten-2 waves-effect waves-light col s12" href="http://shiho-elliptic.tumblr.com">Blog</a></span>
+          <span class="col m6 s12"><a class="btn blue lighten-2 waves-effect waves-light col s12" href="http://elliptic-shiho.hatenablog.com">Blog</a></span>
+          <span class="col m6 s12"><a class="btn blue lighten-2 waves-effect waves-light col s12" href="http://shiho-elliptic.tumblr.com">Tumblr</a></span>
           <span class="col m6 s12"><a class="btn blue lighten-2 waves-effect waves-light col s12" href="skype:shiho.elliptic">skype</a><br><br></span>
           <span class="col m6 s12"><a class="btn blue lighten-2 waves-effect waves-light col s12" href="javascript:void(0)" onclick="Materialize.toast(atob('c2hpaG8uZWxsaXB0aWNAZ21haWwuY29t'), 10000)">Mail</a></span>
           <span class="col m6 s12"><a class="btn blue lighten-2 waves-effect waves-light col s12" href="http://github.com/elliptic-shiho/">github</a><br><br></span>
