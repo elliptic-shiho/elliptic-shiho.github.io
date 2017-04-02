@@ -84,9 +84,9 @@ $(function(){
   var to_count = 0;
   curve.ending = 0;
   var to_handler = function() {
-    curve.ending += 0.001;
+    curve.ending += 0.002;
     to_count     += 1;
-    if(to_count < 1000) {
+    if(to_count < 2000) {
       setTimeout(to_handler, 2);
     }
     two.update();
@@ -107,21 +107,21 @@ $(function(){
     </div>
     <div class="row" id="contents-wrap">
       <div class="col offset-m7 s12 m5 blue white-text" id="contents">
-        <h1>Elliptic-shiho.xyz</h1>
+        <h1>Elliptic-shiho.github.io</h1>
         <hr class="white">
         <h2>About: </h2>
         <section class="right-align">
           Name: Shiho Midorikawa a.k.a. elliptic-shiho<br>
           Age: 0x11<br>
           Security-Camp 2015<br>
-          Cybozu Lab's youth 5th/6th
+          Cybozu Labs youth 5th/6th
         </section>
-        <h2>Love:</h2>
+        <h2>Loves:</h2>
         <section class="right-align">
-          Mathematics(Elliptic curve, Algebraic Geometry)<br>
+          Math(Elliptic Curve)<br>
           Information Security<br>
           CTF(vuls, scryptos, binja, fuzzi3)<br> 
-          Cryptanalysis of Elliptic-curve cryptography
+          Cryptography(Public key cryptography)
         </section>
         <h2>Links/Contact:</h2>
         <section class="right-align center row">
